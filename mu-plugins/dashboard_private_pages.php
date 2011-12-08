@@ -65,7 +65,7 @@ function display_dashboard_widget()
 function add_dashboard_widgets()
 {
   // create a dashboard widget called "private_page_menu_dashboard_widget" with the title "Private Pages Menu" and call our display function to draw it
-  wp_add_dashboard_widget('private_page_menu_dashboard_widget', 'Family Matters NY Instructions', 'display_dashboard_widget' );
+  wp_add_dashboard_widget('private_page_menu_dashboard_widget', 'Tad Hill Website Instructions', 'display_dashboard_widget' );
 }
 
 // finally we have to hook our function into the dashboard setup using add_action
