@@ -2,6 +2,7 @@
 .DS_Store?
 uploads/*
 themes/twentyten/*
+themes/widescreen/*
 themes/twentyeleven/*
 plugins/*
 index.php
