@@ -166,13 +166,17 @@ div.menu,
 #wrapper {
 	margin: 0 auto;
 	width: 940px;
-}
+	}
 #wrapper {
-	background: #fff;
-	margin-top: 20px;
-	padding: 0 20px;
-}
 
+	padding-top: 138px;
+ 	/*padding: 0 20px;*/ 
+	}
+#fuck {  
+	margin: 0 auto;
+	width: 971px;
+	background:  url('assets/header.png') no-repeat  top left; 
+}
 /* Structure the footer area */
 #footer-widget-area {
 	overflow: hidden;
@@ -202,7 +206,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background: #f1f1f1;
+	background: #fff url('assets/page_bg_shadow.png') repeat-y top center;
 }
 body,
 input,
@@ -336,14 +340,19 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	padding: 30px 0 0 0;
+	/*padding: 30px 0 0 0; */ 
 }
 #site-title {
-	float: left;
+/*	float: left;
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 18px 0;
-	width: 700px;
+	width: 700px;*/ 
+	left:-10000px; /*starts here hides the title but it is still there in the text*/
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	position: absolute;    /*hiding code ends here hides the title but it is still there in the text*/
 }
 #site-title a {
 	color: #000;
@@ -359,11 +368,8 @@ a:hover {
 }
 
 /* This is the custom header image */
-#branding img {
-	border-top: 4px solid #000;
-	border-bottom: 1px solid #000;
-	display: block;
-	float: left;
+#branding {
+
 }
 
 
@@ -371,7 +377,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #000;
+   /* background: #000;*/ 
 	display: block;
 	float: left;
 	margin: 0 auto;
@@ -379,8 +385,8 @@ a:hover {
 }
 #access .menu-header,
 div.menu {
-	font-size: 13px;
-	margin-left: 12px;
+	font-size: 15px;
+	margin-left: 96px;
 	width: 928px;
 }
 #access .menu-header ul,
@@ -394,7 +400,7 @@ div.menu li {
 	position: relative;
 }
 #access a {
-	color: #aaa;
+	color: #ccc;
 	display: block;
 	line-height: 38px;
 	padding: 0 10px;
@@ -420,7 +426,7 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #333;
+	background: #569A15;   
 	line-height: 1em;
 	padding: 10px;
 	width: 160px;
@@ -428,7 +434,7 @@ div.menu li {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #333;
+	background: #489101;
 	color: #fff;
 }
 #access ul li:hover > ul {
