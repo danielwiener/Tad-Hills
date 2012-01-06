@@ -52,7 +52,7 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php // body_class(); ?>>
 	<div id="fuck">
 <div id="wrapper" class="hfeed">
 	<div id="header">

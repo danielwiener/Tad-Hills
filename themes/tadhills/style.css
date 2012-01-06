@@ -29,7 +29,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1;
-}
+}  
+
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-weight: normal;
@@ -170,12 +171,13 @@ div.menu,
 #wrapper {
 
 	padding-top: 138px;
- 	/*padding: 0 20px;*/ 
+padding-bottom: 0;
 	}
 #fuck {  
 	margin: 0 auto;
+	padding: 0;
 	width: 971px;
-	background:  url('assets/header.png') no-repeat  top left; 
+	background:  url('assets/header.png') no-repeat  top left;
 }
 /* Structure the footer area */
 #footer-widget-area {
@@ -206,7 +208,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background: #fff url('assets/page_bg_shadow.png') repeat-y top center;
+    background: #fff url('assets/page_bg_shadow.png') repeat-y top center;   
 }
 body,
 input,
@@ -426,7 +428,8 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #569A15;   
+	background: #569A15; /*The fallback */
+	background: rgba(86, 154, 21, 0.95); /*http://css-tricks.com/rgba-browser-support/*/   
 	line-height: 1em;
 	padding: 10px;
 	width: 160px;
@@ -435,6 +438,7 @@ div.menu li {
 #access li:hover > a,
 #access ul ul :hover > a {
 	background: #489101;
+	background: rgba(72, 145, 1, 0.95);
 	color: #fff;
 }
 #access ul li:hover > ul {
@@ -1218,13 +1222,22 @@ h3#reply-title {
 -------------------------------------------------------------- */
 
 #footer {
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
+	margin: 0;
+	padding: 0;   
+       background:  url('assets/footer_bg.gif') repeat-x top left;  
+
+
 }
 #colophon {
-	border-top: 4px solid #000;
+/*	border-top: 4px solid #000;
 	margin-top: -4px;
 	overflow: hidden;
-	padding: 18px 0;
+	padding: 18px 0;   */ 
+	 background:  url('assets/footer_image.png') no-repeat bottom right;
+	height: 100px; 
+       	margin: 0 auto;
+	padding: 0;  
 }
 #site-info {
 	font-weight: bold;
@@ -1233,21 +1246,7 @@ h3#reply-title {
 	color: #000;
 	text-decoration: none;
 }
-#site-generator {
-	font-style: italic;
-	position: relative;
-}
-#site-generator a {
-	background: url(images/wordpress.png) center left no-repeat;
-	color: #666;
-	display: inline-block;
-	line-height: 16px;
-	padding-left: 20px;
-	text-decoration: none;
-}
-#site-generator a:hover {
-	text-decoration: underline;
-}
+
 img#wpstats {
 	display: block;
 	margin: 0 auto 10px;
