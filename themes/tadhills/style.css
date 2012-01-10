@@ -1225,7 +1225,7 @@ h3#reply-title {
 	/*margin-bottom: 20px;*/
 	margin: 0;
 	padding: 0;   
-       background:  url('assets/footer_bg.gif') repeat-x top left;  
+       background:  url('assets/footer_bg.jpg') repeat-x top left;  
 
 
 }
@@ -1235,7 +1235,7 @@ h3#reply-title {
 	overflow: hidden;
 	padding: 18px 0;   */ 
 	 background:  url('assets/footer_image.png') no-repeat bottom right;
-	height: 100px; 
+	height: 95px; 
        	margin: 0 auto;
 	padding: 0;  
 }
