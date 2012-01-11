@@ -18,7 +18,7 @@
 	 * some default sidebar stuff just in case.
 	 */
 ?> 
-<h3>Purchase</h3> 
+<h3 class="books">Purchase</h3> 
 <ul class="purchase">          
     				<?php if ( get_post_meta($post->ID, "Indie Bound", $single = true) ): ?>
 				<li><a href="<?php echo get_post_meta($post->ID, "Indie Bound", $single = true); ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>

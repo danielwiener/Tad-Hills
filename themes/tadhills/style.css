@@ -1217,6 +1217,16 @@ h3#reply-title {
 #footer-widget-area {
 }
 
+h3.books {
+	background:  url('assets/books_grass_icon.png') no-repeat left top;
+	height: 35px;
+	font-size: 20px;
+	padding: 15px 0 0 40px;
+    /*border: 1px solid #999;*/  
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #000;
+	font-weight: bold;
+}
 
 /* =Footer
 -------------------------------------------------------------- */
@@ -1251,6 +1261,8 @@ img#wpstats {
 	display: block;
 	margin: 0 auto 10px;
 }
+
+
 
 
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
