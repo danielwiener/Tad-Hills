@@ -52,8 +52,8 @@
 ?>
 </head>
 
-<body <?php // body_class(); ?>>
-	<div id="fuck">
+<body <?php body_class(); ?>>
+	<div id="bg_wrapper">
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<div id="masthead">

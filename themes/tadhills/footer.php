@@ -6,13 +6,13 @@
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Tad Hills
+ * @since Tad Hills 1.0
  */
 ?>
 	</div><!-- #main -->
  </div><!-- #wrapper --> 
-</div><!-- #fuck -->
+</div><!-- #bg_wrapper -->
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
 		</div><!-- #colophon -->
@@ -25,7 +25,6 @@
 	 * tag of your theme, or you will break many plugins, which
 	 * generally use this hook to reference JavaScript files.
 	 */
-
 	wp_footer();
 ?>
 </body>
