@@ -3,7 +3,7 @@
  * The Sidebar containing the primary and secondary widget areas.
  *
  * @package WordPress
- * @subpackage Tad Hill
+ * @subpackage Tad Hills
  * @since Tad Hills 1.0
  */
 ?>
@@ -18,8 +18,8 @@
 	 * some default sidebar stuff just in case.
 	 */
 ?> 
-<h3>Buy This Book</h3> 
-<ul>          
+<h3>Purchase</h3> 
+<ul class="purchase">          
     				<?php if ( get_post_meta($post->ID, "Indie Bound", $single = true) ): ?>
 				<li><a href="<?php echo get_post_meta($post->ID, "Indie Bound", $single = true); ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>
 			<?php endif ?>
@@ -28,6 +28,9 @@
 		<?php endif ?>
 			<?php if ( get_post_meta($post->ID, "Amazon", $single = true) ): ?>
 				<li><a href="<?php echo get_post_meta($post->ID, "Amazon", $single = true); ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"><a/></li>
+			<?php endif ?>
+			<?php if ( get_post_meta($post->ID, "Rocket Ipad App", $single = true) ): ?>
+				<li><a href="<?php echo get_post_meta($post->ID, "Rocket Ipad App", $single = true); ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"><a/></li>
 			<?php endif ?>
 			 </ul>
   <ul class="xoxo">    	
