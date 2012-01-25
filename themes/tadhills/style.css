@@ -219,12 +219,13 @@ textarea {
 	font-size: 12px;
 	line-height: 18px;
 }
-hr {
-	background-color: #e7e7e7;
-	border: 0;
+
+hr { 
+	background:transparent url('assets/hr_branches.jpg') no-repeat top center; 
+	border:none !important;  
 	clear: both;
-	height: 1px;
-	margin-bottom: 18px;
+	height:90px;
+	/*margin-bottom: 18px;*/
 }
 
 /* Text elements */
