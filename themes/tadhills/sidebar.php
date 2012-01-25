@@ -17,22 +17,44 @@
 	 * then the sidebar simply doesn't exist, so we'll hard-code in
 	 * some default sidebar stuff just in case.
 	 */
+		if ( get_post_meta($post->ID, "Indie Bound", $single = true) ) {
+			$indie_bound = get_post_meta($post->ID, "Indie Bound", $single = true);
+			$purchase_flag = true;
+		}
+		
+		if ( get_post_meta($post->ID, "Barnes and Noble", $single = true) ) {
+			$barnes_noble = get_post_meta($post->ID, "Barnes and Noble", $single = true);
+			$purchase_flag = true;
+		}
+		
+		if ( get_post_meta($post->ID, "Amazon", $single = true) ) {
+			$amazon = get_post_meta($post->ID, "Amazon", $single = true);
+			$purchase_flag = true;
+		}
+		
+		if ( get_post_meta($post->ID, "Rocket Ipad App", $single = true) ) {
+			$rocket_ipad_app = get_post_meta($post->ID, "Rocket Ipad App", $single = true);
+			$purchase_flag = true;
+		}
 ?> 
+	<?php if ( $purchase_flag ): ?>
+	 	
 <h3 class="books">Purchase</h3> 
 <ul class="purchase">          
-    				<?php if ( get_post_meta($post->ID, "Indie Bound", $single = true) ): ?>
-				<li><a href="<?php echo get_post_meta($post->ID, "Indie Bound", $single = true); ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>
+    				<?php if ( $indie_bound ): ?>
+				<li><a href="<?php echo $indie_bound; ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>
 			<?php endif ?>
-	        	<?php if ( get_post_meta($post->ID, "Barnes and Noble", $single = true) ): ?>
-			<li><a href="<?php echo get_post_meta($post->ID, "Barnes and Noble", $single = true); ?>" target="_blank" title="Buy from Barnes and Noble"><img src="/!/wp-content/themes/tadhills/assets/barnes_and_noble.png" width="150" height="44"><a/></li>
+	        	<?php if ( $barnes_noble ): ?>
+			<li><a href="<?php echo $barnes_noble; ?>" target="_blank" title="Buy from Barnes and Noble"><img src="/!/wp-content/themes/tadhills/assets/barnes_and_noble.png" width="150" height="44"><a/></li>
 		<?php endif ?>
-			<?php if ( get_post_meta($post->ID, "Amazon", $single = true) ): ?>
-				<li><a href="<?php echo get_post_meta($post->ID, "Amazon", $single = true); ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"><a/></li>
+			<?php if ( $amazon ): ?>
+				<li><a href="<?php echo $amazon; ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"><a/></li>
 			<?php endif ?>
-			<?php if ( get_post_meta($post->ID, "Rocket Ipad App", $single = true) ): ?>
-				<li><a href="<?php echo get_post_meta($post->ID, "Rocket Ipad App", $single = true); ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"><a/></li>
+			<?php if ( $rocket_ipad_app ): ?>
+				<li><a href="<?php echo $rocket_ipad_app; ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"><a/></li>
 			<?php endif ?>
-			 </ul>
+			 </ul> 
+   <?php endif ?>
   <ul class="xoxo">    	
 		 
 <?php

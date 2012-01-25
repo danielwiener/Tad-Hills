@@ -171,13 +171,15 @@ div.menu,
 #wrapper {
 
 	padding-top: 138px;
-padding-bottom: 0;
+padding-bottom: 0;  
+
 	}
 #bg_wrapper {  
 	margin: 0 auto;
 	padding: 0;
 	width: 971px;
 	background:  url('assets/header.png') no-repeat  top left;
+
 }
 /* Structure the footer area */
 #footer-widget-area {
@@ -208,7 +210,7 @@ padding-bottom: 0;
 
 /* Main global 'theme' and typographic styles */
 body {
-    background: #fff url('assets/page_bg_shadow.png') repeat-y top center;   
+    background: #fff url('assets/page_bg_shadow.png') repeat-y top center;
 }
 body,
 input,
@@ -466,6 +468,7 @@ div.menu li {
 	clear: both;
 	overflow: hidden;
 	padding: 40px 0 0 0;
+	
 }
 #content {
 	margin-bottom: 36px;
