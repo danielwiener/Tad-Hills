@@ -7,4 +7,6 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 - sidebar for purchase pages only.
 
+- adding table of contents page for books
+
 ***
