@@ -10,8 +10,8 @@
  * This can be overridden in child themes with loop-page.php.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.2
+ * @subpackage Tad Hills
+ * @since Tad Hills 1.0
  */
 ?>
 
