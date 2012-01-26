@@ -11,4 +11,6 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 - added the plugin More Fields, with Praise and Awards fields for Pages
 
+- added font from TypeKit
+
 ***
