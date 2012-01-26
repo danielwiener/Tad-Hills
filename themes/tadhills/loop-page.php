@@ -27,6 +27,17 @@
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<hr />
+						<?php if ( get_post_meta($post->ID, "_praise", $single = true) ): ?> 
+							<h2>Praise</h2>
+							     <?php meta('_praise'); ?>
+						<?php endif ?>
+						<?php if ( get_post_meta($post->ID, "_awards", $single = true) ): ?>
+							<?php if ( get_post_meta($post->ID, "_praise", $single = true) ): ?>
+								<hr /> 
+							<?php endif ?>
+							<h2>Awards</h2>
+							     <?php meta('_awards'); ?>
+						<?php endif ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-content -->
