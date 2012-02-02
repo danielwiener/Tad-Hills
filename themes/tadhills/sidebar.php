@@ -61,7 +61,25 @@
    
 	
 	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
-		<?php endif; // end primary widget area ?>
+		<?php endif; // end primary widget area ?> 
+		<?php $this_id = $post->post_parent;
+		$parent_title = get_the_title($post->post_parent);
+		 ?>
+		 	
+		<h3 class="books"><?php echo $parent_title; ?></h3>
+		 <?php  
+		$args = array(
+				'post_type' => 'page', 
+				'post_status' => 'publish',
+				'post_parent' => $this_id,  //this will change in the remote version
+				);
+			global $post;
+			$program_pages = get_posts($args);
+			foreach($program_pages as $post) :
+			   setup_postdata($post);
+			 ?>
+			    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+			 <?php endforeach; ?>
 		</ul></div><!-- #primary .widget-area -->
 
 <?php

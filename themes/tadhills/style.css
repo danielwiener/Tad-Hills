@@ -1176,6 +1176,10 @@ h3#reply-title {
 .widget-area a:link,
 .widget-area a:visited {
 	text-decoration: none;
+	color: #489101;
+	font-size: 13px;
+	line-height: 22px;
+	
 }
 .widget-area a:active,
 .widget-area a:hover {
@@ -1183,6 +1187,10 @@ h3#reply-title {
 }
 .widget-area .entry-meta {
 	font-size: 11px;
+}  
+
+.widget-area li {
+	padding: 0 0 0 10px;
 }
 #wp_tag_cloud div {
 	line-height: 1.6em;

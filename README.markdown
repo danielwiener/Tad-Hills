@@ -13,4 +13,11 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 - added font from TypeKit
 
-***
+***  
+##February 1, 2012##
+
+- added second loop to TOC page for Board Books on Goose and Duck
+
+- added list of pages of parent page on sidebar
+
+- styled sidebar some
