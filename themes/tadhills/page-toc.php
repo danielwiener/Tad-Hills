@@ -21,7 +21,6 @@ get_header(); ?>
 			 */
 			get_template_part( 'loop', 'page_toc' );
 			?>
-
 			</div><!-- #content -->
 		</div><!-- #container -->
 
