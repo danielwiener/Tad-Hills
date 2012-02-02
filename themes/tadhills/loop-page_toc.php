@@ -26,21 +26,48 @@
                               							<div id="image_grid">
 								<ul>		
 					<?php 
+					$this_post_id = $post->ID;
 						$recent_args = array(
 							'posts_per_page' => -1,
 							'post_type' => 'page',
 							'post_status' => 'publish',
 							'post_parent' => $post->ID  
-							);
+							); 
 						query_posts($recent_args);
 						if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-										 <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?><br />
+										 <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></li>
  
 
 					<?php endwhile; ?>
 					</ul>
 					</div> <!-- #image_grid -->
+					<?php if ( $this_post_id == 28 ): ?> 
+						<hr />
+						     <h2 class="entry-title">Board Books</h2> 
+								<div id="image_grid">
+		<ul>
+							<?php
+                             $boardbooks_args = array(
+                              	'posts_per_page' => -1,
+								'post_type' => 'page',
+								'post_status' => 'publish',
+								'post_parent' => 36   
+                             );
+							// The Query
+							$boardbooks_query = new WP_Query( $boardbooks_args );
+
+							// The Loop
+							while ( $boardbooks_query->have_posts() ) : $boardbooks_query->the_post(); ?>
+							 <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></li>
+							<?php endwhile; ?>
+                                 </ul> 
+</div>
+							<?php // Reset Post Data
+							wp_reset_postdata();
+
+							?> 
+					<?php endif ?>
 					<div class="entry-content">
 						<?php // the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
