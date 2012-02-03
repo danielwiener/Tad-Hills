@@ -105,3 +105,15 @@ function twentyten_admin_header_style() {
 // do nothing 
 }
 endif;
+
+// smart jquery inclusion 
+//http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
+function dw_add_js_scripts() {
+	if (!is_admin()) {
+   
+		wp_enqueue_script('jquery'); 
+
+	  }       
+} 
+//also need to figure out how do this with less repitition, more elegantly
+add_action('init', 'dw_add_js_scripts');

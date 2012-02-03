@@ -32,7 +32,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script type="text/javascript" src="http://use.typekit.com/yei2kyo.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+ <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/tabs_slideshow.css" /> 
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -46,7 +46,9 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-?>
+?>   
+<!-- <script type="text/javascript" src="http://tadhills.dev/!/wp-content/themes/tadhills/js/jquery.tools.min.js"></script>    -->
+<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

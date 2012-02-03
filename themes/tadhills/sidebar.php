@@ -17,23 +17,23 @@
 	 * then the sidebar simply doesn't exist, so we'll hard-code in
 	 * some default sidebar stuff just in case.
 	 */
-		if ( get_post_meta($post->ID, "Indie Bound", $single = true) ) {
-			$indie_bound = get_post_meta($post->ID, "Indie Bound", $single = true);
+		if ( get_post_meta($post->ID, "_indiebound", $single = true) ) {
+			$indie_bound = get_post_meta($post->ID, "_indiebound", $single = true);
 			$purchase_flag = true;
 		}
 		
-		if ( get_post_meta($post->ID, "Barnes and Noble", $single = true) ) {
-			$barnes_noble = get_post_meta($post->ID, "Barnes and Noble", $single = true);
+		if ( get_post_meta($post->ID, "_barnes_and_noble", $single = true) ) {
+			$barnes_noble = get_post_meta($post->ID, "_barnes_and_noble", $single = true);
 			$purchase_flag = true;
 		}
 		
-		if ( get_post_meta($post->ID, "Amazon", $single = true) ) {
-			$amazon = get_post_meta($post->ID, "Amazon", $single = true);
+		if ( get_post_meta($post->ID, "_amazon", $single = true) ) {
+			$amazon = get_post_meta($post->ID, "_amazon", $single = true);
 			$purchase_flag = true;
 		}
 		
-		if ( get_post_meta($post->ID, "Rocket Ipad App", $single = true) ) {
-			$rocket_ipad_app = get_post_meta($post->ID, "Rocket Ipad App", $single = true);
+		if ( get_post_meta($post->ID, "_rocket_ipad_app", $single = true) ) {
+			$rocket_ipad_app = get_post_meta($post->ID, "_rocket_ipad_app", $single = true);
 			$purchase_flag = true;
 		}
 ?> 
@@ -69,6 +69,7 @@
 		<h3 class="books"><?php echo $parent_title; ?></h3>
 		 <?php  
 		$args = array(
+				'posts_per_page'=>-1,
 				'post_type' => 'page', 
 				'post_status' => 'publish',
 				'post_parent' => $this_id,  //this will change in the remote version

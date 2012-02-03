@@ -1411,3 +1411,11 @@ code {
 		border: none;
 	}
 }
+/* =Images More DW
+-------------------------------------------------------------- */
+
+	.slide_container {
+		height: 400px;
+		overflow: hidden;
+		display: block;
+	}
