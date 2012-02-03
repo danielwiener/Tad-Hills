@@ -21,3 +21,7 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 - added list of pages of parent page on sidebar
 
 - styled sidebar some
+
+##February 2, 2012##
+
+- added slide show on the front page with jQuery Tools. will style it, clean it up soon.
