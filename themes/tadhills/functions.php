@@ -112,6 +112,13 @@ function dw_add_js_scripts() {
 	if (!is_admin()) {
    
 		wp_enqueue_script('jquery'); 
+		
+		   wp_register_script('jquery_tools',
+		       get_bloginfo('stylesheet_directory') . '/js/jquery.tools.min.js',
+		       array('jquery'),
+		       '1.0' );
+		   // enqueue the script
+		   wp_enqueue_script('jquery_tools');
 
 	  }       
 } 

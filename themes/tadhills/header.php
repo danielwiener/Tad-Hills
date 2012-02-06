@@ -47,8 +47,7 @@
 	 */
 	wp_head();
 ?>   
-<!-- <script type="text/javascript" src="http://tadhills.dev/!/wp-content/themes/tadhills/js/jquery.tools.min.js"></script>    -->
-<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
