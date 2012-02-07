@@ -105,7 +105,8 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 .single-attachment #content {
 	margin: 0 auto;
 	width: 900px;
-}
+} 
+
 
 
 /* =Fonts
@@ -178,7 +179,6 @@ padding-bottom: 0;
 	padding: 0;
 	width: 971px;
 	background:  url('assets/header.png') no-repeat  top left;
-
 }
 /* Structure the footer area */
 #footer-widget-area {
@@ -1289,10 +1289,12 @@ h3.books {
 	margin-top: -4px;
 	overflow: hidden;
 	padding: 18px 0;   */ 
-	 background:  url('assets/footer_image.png') no-repeat bottom right;
-	height: 95px; 
-       	margin: 0 auto;
-	padding: 0;  
+	/* background:  url('assets/footer_image.png') no-repeat bottom right;*/
+	height: 92px;
+	 margin-bottom: 0;
+
+	padding: 0; 
+  /*  border: 1px solid #999;*/  
 }
 #site-info {
 	font-weight: bold;
