@@ -353,16 +353,21 @@ a:hover {
 	line-height: 36px;
 	margin: 0 0 18px 0;
 	width: 700px;*/ 
-	left:-10000px; /*starts here hides the title but it is still there in the text*/
+	text-indent:-10000px; /*starts here hides the title but it is still there in the text*/
 	width:1px;
-	height:1px;
-	overflow:hidden;
+	height:1px; 
+	overflow:hidden; 
 	position: absolute;    /*hiding code ends here hides the title but it is still there in the text*/
 }
-#site-title a {
-	color: #000;
-	font-weight: bold;
-	text-decoration: none;
+
+
+#site-title a {       /*I know this is weird. It is made so that the top background image is a link to the front page from http://haacked.com/archive/2006/01/13/ClickableBackgroundImagesViaCSS.aspx */
+	position: absolute;
+    top: -140px;
+    left: 30px;
+    width: 860px;
+    height: 135px;
+	/*border: 1px solid #999;*/
 }
 #site-description {
 	clear: right;
