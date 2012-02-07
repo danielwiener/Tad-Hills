@@ -14,7 +14,7 @@
  </div><!-- #wrapper --> 
 </div><!-- #bg_wrapper -->
 	<div id="footer" role="contentinfo">
-		<div id="colophon"> <img class="alignright" src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/footer_image.png">
+		<div id="colophon">
 		</div><!-- #colophon -->
 	</div><!-- #footer -->
 
