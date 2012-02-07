@@ -354,9 +354,9 @@ a:hover {
 	margin: 0 0 18px 0;
 	width: 700px;*/ 
 	text-indent:-10000px; /*starts here hides the title but it is still there in the text*/
-	width:1px;
+/*	width:1px;
 	height:1px; 
-	overflow:hidden; 
+	overflow:hidden;*/ 
 	position: absolute;    /*hiding code ends here hides the title but it is still there in the text*/
 }
 
