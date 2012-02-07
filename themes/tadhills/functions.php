@@ -89,6 +89,7 @@ function twentyten_setup() {
 
 	// Using post thumbnails for thumbnail grids of book covers 200 pixels wide and @220 high, cropped 
 	set_post_thumbnail_size( 200, 220, true );
+	add_image_size('book_cover', 406, 450, true  );
     /*
     	TODO May need to change thumbnail. AND will need to include more sizes.
     */

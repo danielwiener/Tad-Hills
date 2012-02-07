@@ -323,14 +323,15 @@ textarea {
 	padding: 2px;
 }
 a:link {
-	color: #0066cc;
+	color: #FC6F13;
+	text-decoration: none;
 }
 a:visited {
-	color: #743399;
+	color: #FC6F13;
 }
 a:active,
 a:hover {
-	color: #ff4b33;
+	color: #489101;
 }
 
 /* Text meant only for screen readers */
@@ -1411,11 +1412,31 @@ code {
 		border: none;
 	}
 }
-/* =Images More DW
+/* =Images More DW   Front Page Slide Show
 -------------------------------------------------------------- */
 
 	.slide_container {
-		height: 400px;
+		height: 450px;
 		overflow: hidden;
 		display: block;
+		float: left;
+		padding: 0 20px 0 0;
+	}  
+	
+
+	
+  #content  a.front-title:link,
+   #content  a.front-title:visited {
+		font-family: freight-sans-pro "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+		color: #489101;
+		text-decoration: none;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 1em;
+		margin-bottom: 0;
+	}
+   #content a.front-title:active,
+	#content a.front-title:hover {
+		color: #ff4b33;
+		text-decoration: none;
 	}

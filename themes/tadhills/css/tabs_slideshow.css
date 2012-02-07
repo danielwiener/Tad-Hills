@@ -1,15 +1,16 @@
-/* container for slides This is very tweaked by DW fro RISD, don't copy and paste it for another site.*/
+/* container for slides This is very tweaked by DW for Tad Hills, don't copy and paste it for another site. AND DON'T UPDATE FROM JQUERY TOOLS!!!!*/
 .images {
 /*	background:#fff  url(../images/gradient400.png) repeat-x */;
 	/* border:1px solid #ccc;*/ 
 	position:relative;	
-	height:480px;
+	height:460px;
 	
-	width:675px;
+	width:900px;
 	float:left;	
 	margin:0;
 	padding: 0;
 	cursor:pointer;
+
 	
 	/* CSS3 tweaks for modern browsers */
 /*	-moz-border-radius:5px;
