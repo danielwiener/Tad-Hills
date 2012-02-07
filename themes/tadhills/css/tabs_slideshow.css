@@ -27,7 +27,8 @@
 	left:0;		
 	margin:0px;
 	padding:0px 0px 0px 0px;
-	height:480px;
+	height:455px; 
+	/*border: 1px solid #999;*/
 	/*font-size:12px;*/
 }
 
@@ -53,29 +54,30 @@ text-decoration: none;
 /* tabs (those little circles below slides) */
 .slidetabs {
 	clear:both;
-	margin-left:310px;
+	margin-left:410px;
 	/*border: 1px solid #999;*/
 }
 
 /* single tab */
 .slidetabs a {
-	width:8px;
-	height:8px;
+	width:32px;
+	height:32px;
 	float:left;
 	margin:3px;
-	background:url(../images/navigator.png) 0 0 no-repeat;
+	background: #fff url(../images/navigator.png) 0 0 no-repeat;
 	display:block;
-	font-size:1px;		
+	font-size:32px;    	
 }
 
 /* mouseover state */
 .slidetabs a:hover {
-	background-position:0 -8px;      
+	background-position:0 -32px !important;
+	display: block;     
 }
 
 /* active state (current page state) */
 .slidetabs a.current {
-	background-position:0 -16px;     
+	background-position:0 -64px;     
 } 	
 
 

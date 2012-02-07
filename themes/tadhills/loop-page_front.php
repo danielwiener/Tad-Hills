@@ -32,7 +32,7 @@
 					
 					<a href="<?php the_permalink(); ?>" class="slide_container"><?php the_post_thumbnail('book_cover'); ?></a>
 					<?php endif; ?>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" class="front-title"> <?php the_title(); ?></a> 
+					<span class="front-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" > <?php the_title(); ?></a> </span>
 					<p><?php the_excerpt(); ?></p>
 				</div><!-- div no class -->
 		<?php $slidetabs .= '<a href="#"></a>'; ?>

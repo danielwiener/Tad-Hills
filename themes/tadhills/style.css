@@ -115,7 +115,7 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: Georgia, "Bitstream Charter", serif;
+	font-family: Georgia, "Bitstream Charter", serif;  
 }
 h3#comments-title,
 h3#reply-title,
@@ -575,7 +575,7 @@ div.menu li {
 	color: #ff4b33;
 }
 #content .entry-title {
-	font-family: freight-sans-pro "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	color: #000;
 	font-size: 45px;
 	font-weight: 400;
@@ -1263,7 +1263,7 @@ h3.books {
 	font-size: 26px;
 	padding: 15px 0 0 0px;
     /*border: 1px solid #999;*/  
-	font-family: freight-sans-pro "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	color: #000;
 	font-weight: 300;
 }
@@ -1423,11 +1423,13 @@ code {
 		padding: 0 20px 0 0;
 	}  
 	
-
+body #main #container #content div.images div span.front-title a {
+	          font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important;
+}
 	
-  #content  a.front-title:link,
-   #content  a.front-title:visited {
-		font-family: freight-sans-pro "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+body #main #container #content div.images div span.front-title a:link,
+body #main #container #content div.images div span.front-title a:visited {
+		font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important;
 		color: #489101;
 		text-decoration: none;
 		font-size: 32px;
@@ -1435,8 +1437,9 @@ code {
 		line-height: 1em;
 		margin-bottom: 0;
 	}
-   #content a.front-title:active,
-	#content a.front-title:hover {
+body #main #container #content div.images div span.front-title a:active,
+body #main #container #content div.images div span.front-title a:hover {
+		font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; 
 		color: #ff4b33;
 		text-decoration: none;
 	}
