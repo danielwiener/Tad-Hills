@@ -15,7 +15,10 @@
 </div><!-- #bg_wrapper -->
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
+			<a href="http://www.facebook.com/tadhills">&nbsp;</a>
+			<div id="site-info"><a href="http://twitter.com/">&nbsp;</a></div> 
 		</div><!-- #colophon -->
+		
 	</div><!-- #footer -->
 
 

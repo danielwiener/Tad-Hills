@@ -193,10 +193,7 @@ padding-bottom: 0;
 	margin-right: 0;
 }
 #site-info {
-	float: left;
-	font-size: 14px;
-	font-weight: bold;
-	width: 700px;
+
 }
 #site-generator {
 	float: right;
@@ -1293,15 +1290,33 @@ h3.books {
 	height: 95px;
 	margin: 0 auto;
 	padding: 0;
-	}
-  /*  border: 1px solid #999;*/  
+	border: 1px solid #999;
+	position: relative; 
+   
+} 
+
+#colophon a {
+	position: absolute;
+    top: 0px;
+    left: 750px;
+    width: 60px;
+    height: 95px;
+/*	border: 1px solid #999;*/
+	display: block; 
+	z-index: 99;   
 }
 #site-info {
-	font-weight: bold;
+   
 }
 #site-info a {
-	color: #000;
-	text-decoration: none;
+ 	position: absolute;
+    top: 0px;
+    left: 815px;
+    width: 40px;
+    height: 95px;
+/*	border: 1px solid red;*/
+	display: block; 
+	z-index: 99;
 }
 
 img#wpstats {
