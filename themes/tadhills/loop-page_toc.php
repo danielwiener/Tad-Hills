@@ -31,7 +31,9 @@
 							'posts_per_page' => -1,
 							'post_type' => 'page',
 							'post_status' => 'publish',
-							'post_parent' => $post->ID  
+							'post_parent' => $post->ID,
+							'orderby' => 'menu_order', 
+							'order' => 'ASC' 
 							); 
 						query_posts($recent_args);
 						if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

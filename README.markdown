@@ -24,4 +24,17 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 ##February 2, 2012##
 
-- added slide show on the front page with jQuery Tools. will style it, clean it up soon.
+- added slide show on the front page with jQuery Tools. will style it, clean it up soon.      
+
+##February 6, 2012##
+
+- worked on slide show and added content
+
+##February 7, 2012##
+
+- more slide show, balls as slide tabs
+
+- link to site title background image
+
+- trying to get footer to bottom of page
+
