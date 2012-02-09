@@ -38,3 +38,8 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 - trying to get footer to bottom of page
 
+##February 8, 2012##
+
+- links in footer
+
+- collecting images online
