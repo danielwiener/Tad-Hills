@@ -24,22 +24,38 @@
 	);
 	query_posts($args);
 	$slidetabs = ''; ?>
+	<script language="JavaScript">
+	// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+	// jQuery.noConflict();
+	jQuery(document).ready(function($){ 
+
+	$(".slidetabs").tabs(".images > div", {
+
+		// enable "cross-fading" effect
+		effect: 'fade',
+		fadeOutSpeed: "slow",
+
+		// start from the beginning after the last tab
+		rotate: true
+
+	// use the slideshow plugin. It accepts its own configuration
+	}).slideshow( {
+		autoplay: true,
+		interval: 5000
+		} );
+	} );
+	</script>
 	 <div class="images">
+		
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>  
 	        
-	<div>         
-				<?php if(has_post_thumbnail()): ?> 
-					
-					<a href="<?php the_permalink(); ?>" class="slide_container"><?php the_post_thumbnail('book_cover'); ?></a>
+	<div><?php if(has_post_thumbnail()): ?> 
+			<a href="<?php the_permalink(); ?>" class="slide_container"><?php the_post_thumbnail('book_cover'); ?></a>
 					<?php endif; ?>
 					<span class="front-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" > <?php the_title(); ?></a> </span>
-					<p><?php the_excerpt(); ?></p>
-				</div><!-- div no class -->
+					<?php the_excerpt(); ?></div><!-- div no class -->
 		<?php $slidetabs .= '<a href="#"></a>'; ?>
-			<?php endwhile; // End the loop.
-			
-			wp_reset_query();?> 
-			     </div><!-- images -->  
+			<?php endwhile; // End the loop. // wp_reset_query();?> </div><!-- images -->  
 
 <!-- <a class="backward">prev</a><a class="forward">next</a>   -->    
 <div class="slidetabs">
@@ -52,24 +68,7 @@
 </div>    -->
 
 
-<script language="JavaScript">
-// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
-jQuery.noConflict();
-jQuery(document).ready(function($){ 
 
-$(".slidetabs").tabs(".images > div", {
-
-	// enable "cross-fading" effect
-	effect: 'fade',
-	fadeOutSpeed: "slow",
-
-	// start from the beginning after the last tab
-	rotate: true
-
-// use the slideshow plugin. It accepts its own configuration
-}).slideshow({autoplay:true});
-});
-</script>
 	 
 
 <?php // endwhile; // end of the loop. ?>
