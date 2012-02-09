@@ -24,29 +24,7 @@
 	);
 	query_posts($args);
 	$slidetabs = ''; ?>
-	<script language="JavaScript">
-	// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
-	// jQuery.noConflict();
-	jQuery(document).ready(function($){ 
-
-	$(".slidetabs").tabs(".images > div", {
-
-		// enable "cross-fading" effect
-		effect: 'fade',
-		fadeOutSpeed: "slow",
-
-		// start from the beginning after the last tab
-		rotate: true
-
-	// use the slideshow plugin. It accepts its own configuration
-	}).slideshow( {
-		autoplay: true,
-		interval: 5000
-		} );
-	} );
-	</script>
-	 <div class="images">
-		
+	 <div class="images">		
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>  
 	        
 	<div><?php if(has_post_thumbnail()): ?> 
@@ -66,9 +44,24 @@
 	<button onClick='$(".slidetabs").data("slideshow").play();'>Play</button>
 	<button onClick='$(".slidetabs").data("slideshow").stop();'>Stop</button>
 </div>    -->
+<script language="JavaScript">
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+// jQuery.noConflict();
+jQuery(document).ready(function($){ 
 
+$(".slidetabs").tabs(".images > div", {
 
+	// enable "cross-fading" effect
+	effect: 'fade',
+	fadeOutSpeed: "slow",
 
-	 
+	// start from the beginning after the last tab
+	rotate: true
 
-<?php // endwhile; // end of the loop. ?>
+// use the slideshow plugin. It accepts its own configuration
+}).slideshow( {
+	autoplay: true,
+	interval: 5000
+	} );
+} );
+</script>
