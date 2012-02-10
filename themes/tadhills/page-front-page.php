@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Table of Contents
+ * Template Name: Front Page
  *
  * This is the template that displays a page which will show table of contents for all the children pages of a parent page
  *
