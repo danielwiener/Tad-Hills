@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-		<div id="container"  class="single-attachment">
+		<div id="container"  class="front-page">
 			<div id="content" role="main">
      
 			<?php
@@ -25,5 +25,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-
+<?php get_sidebar('front_teaser'); ?>
 <?php get_footer(); ?>

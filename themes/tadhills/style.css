@@ -105,7 +105,13 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 .single-attachment #content {
 	margin: 0 auto;
 	width: 900px;
-} 
+}   
+
+.front-page #content {
+   /* margin: 0 auto;*/
+	width: 640px; 
+	border: 1px solid #999;
+}
 
 
 
@@ -1443,6 +1449,7 @@ code {
 		display: block;
 		float: left;
 		padding: 0 20px 0 0;
+		
 	}  
 	
 body #main #container #content div.images div span.front-title a {

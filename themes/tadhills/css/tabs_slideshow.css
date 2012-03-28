@@ -5,11 +5,12 @@
 	position:relative;	
 	height:460px;
 	
-	width:900px;
+	width:640px;
 	float:left;	
 	margin:0;
 	padding: 0;
-	cursor:pointer;
+	cursor:pointer; 
+	background-color: #ccc;
 
 	
 	/* CSS3 tweaks for modern browsers */
@@ -54,7 +55,7 @@ text-decoration: none;
 /* tabs (those little circles below slides) */
 .slidetabs {
 	clear:both;
-	margin-left:410px;
+	margin-left:260px;
 	/*border: 1px solid #999;*/
 }
 
