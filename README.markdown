@@ -51,3 +51,16 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 - links in footer
 
 - collecting images online
+
+***
+
+##February 9, 2012##
+
+- slideshow and sidebars
+                           
+
+***
+
+##March 28, 2012##
+
+- front page slideshow is thinner for Upcoming Events teaser on right

@@ -68,7 +68,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #container {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 100%; 
+	background: #fff;
 }
 #content {
 	margin: 0 280px 0 20px;
@@ -176,8 +177,9 @@ div.menu,
 	}
 #wrapper {
 
-	padding-top: 138px;
-padding-bottom: 0;  
+	/*padding-top: 138px;*/
+padding-bottom: 0;
+
 
 	}
 #bg_wrapper {  
@@ -212,7 +214,8 @@ padding-bottom: 0;
 
 /* Main global 'theme' and typographic styles */
 body {
-    background: #fff url('assets/page_bg_shadow.png') repeat-y top center;
+    /*background: #fff url('assets/page_bg_shadow.png') repeat-y top center;*/
+	background: #F1F7FF;
 }
 body,
 input,
@@ -348,7 +351,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	/*padding: 30px 0 0 0; */ 
+	padding: 138px 0 0 0;  
 }
 #site-title {
 /*	float: left;
@@ -382,7 +385,6 @@ a:hover {
 
 /* This is the custom header image */
 #branding {
-
 }
 
 
@@ -476,7 +478,7 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 5px 0 0 0;
 	
 }
 #content {

@@ -28,7 +28,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>  
 	        
 	<div><?php if(has_post_thumbnail()): ?> 
-			<a href="<?php the_permalink(); ?>" class="slide_container"><?php the_post_thumbnail('book_cover'); ?></a>
+			<a href="<?php the_permalink(); ?>" class="slide_container"><?php the_post_thumbnail('front'); ?></a>
 					<?php endif; ?>
 					<span class="front-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark" > <?php the_title(); ?></a> </span>
 					<?php the_excerpt(); ?></div><!-- div no class -->
