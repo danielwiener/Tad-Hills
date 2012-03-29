@@ -64,3 +64,13 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 ##March 28, 2012##
 
 - front page slideshow is thinner for Upcoming Events teaser on right
+
+***
+
+##March 29, 2012##
+
+- front page slideshow bg changed
+
+- footer inside of page because of blue bg
+
+- got rid of books headline in sidebar
