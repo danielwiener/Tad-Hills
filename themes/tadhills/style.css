@@ -111,7 +111,7 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 .front-page #content {
    /* margin: 0 auto;*/
 	width: 640px; 
-	border: 1px solid #999;
+	border: 1px solid #D1E3BF;
 }
 
 
