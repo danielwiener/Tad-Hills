@@ -10,9 +10,7 @@
  * @since Tad Hills 1.0
  */
 ?>
-	</div><!-- #main -->
- </div><!-- #wrapper --> 
-</div><!-- #bg_wrapper -->
+
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
 			<a href="http://www.facebook.com/tadhills">&nbsp;</a>
@@ -20,7 +18,9 @@
 		</div><!-- #colophon -->
 		
 	</div><!-- #footer -->
-
+       	</div><!-- #main -->
+ </div><!-- #wrapper --> 
+</div><!-- #bg_wrapper -->  
 
 
 <?php

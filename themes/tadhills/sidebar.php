@@ -39,7 +39,7 @@
 ?> 
 	<?php if ( $purchase_flag ): ?>
 	 	
-<h3 class="books">Purchase</h3> 
+<!-- <h3 class="books">Purchase</h3>  -->
 <ul class="purchase">          
     				<?php if ( $indie_bound ): ?>
 				<li><a href="<?php echo $indie_bound; ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>
@@ -54,7 +54,9 @@
 				<li><a href="<?php echo $rocket_ipad_app; ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"><a/></li>
 			<?php endif ?>
 			 </ul> 
-   <?php endif ?>
+			
+   <?php endif ?> 
+
   <ul class="xoxo">    	
 		 
 <?php
@@ -66,7 +68,7 @@
 		$parent_title = get_the_title($post->post_parent);
 		 ?>
 		 	
-		<h3 class="books"><?php echo $parent_title; ?></h3>
+		<!-- <h3 class="books"><?php // echo $parent_title; ?></h3>  -->
 		 <?php  
 		$args = array(
 				'posts_per_page'=>-1,
