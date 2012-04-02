@@ -74,3 +74,14 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 - footer inside of page because of blue bg
 
 - got rid of books headline in sidebar
+
+***
+
+##April 2, 2012##
+
+- sidebar changes  - bird as bullet point
+
+- category and single and sidebar minor changes
+
+ - headlines and other styling
+

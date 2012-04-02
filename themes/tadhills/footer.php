@@ -14,7 +14,7 @@
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
 			<a href="http://www.facebook.com/tadhills">&nbsp;</a>
-			<div id="site-info"><a href="http://twitter.com/">&nbsp;</a></div> 
+			<div id="site-info"><a href="http://twitter.com/home?status=I just read Tad Hills webpage - <?php the_title() ?> - you should take a look at it. <?php the_permalink(); ?>">&nbsp;</a></div> 
 		</div><!-- #colophon -->
 		
 	</div><!-- #footer -->
