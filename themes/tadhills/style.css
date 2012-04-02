@@ -1192,14 +1192,25 @@ h3#reply-title {
 .widget-area a:visited {
 	text-decoration: none;
 	color: #489101;
-	font-size: 13px;
-	line-height: 22px;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 5px 5px 5px 18px;
 	
 }
 .widget-area a:active,
 .widget-area a:hover {
-	text-decoration: underline;
-}
+	color: #FC6F13;
+	text-decoration: none;
+}   
+ 
+
+.widget-area ul.xoxo li { 
+	 font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	background: transparent url('assets/bird.png') no-repeat  5px 0;
+	/*border-bottom: 1px solid #E8F1DF;*/
+	/*#E8F1DF*/  
+	margin: 1px;
+} 
 .widget-area .entry-meta {
 	font-size: 11px;
 }  
