@@ -30,5 +30,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('front_teaser'); ?>
 <?php get_footer(); ?>

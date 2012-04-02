@@ -144,7 +144,6 @@ h3#reply-title,
 .entry-utility,
 #respond label,
 .navigation,
-.page-title,
 .pingback p,
 .reply,
 .widget-title,
@@ -565,18 +564,15 @@ div.menu li {
 .single .hentry {
 	margin: 0 0 36px 0;
 }
-.page-title {
-	color: #000;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0 0 36px 0;
+#content .page-title { 
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #489101;
+	font-size: 45px;
+	font-weight: 600;
+	margin: 0 0 17px 0;
+   /* border-bottom: 1px solid #999;*/
 }
-.page-title span {
-	color: #333;
-	font-size: 16px;
-	font-style: italic;
-	font-weight: normal;
-}
+
 .page-title a:link,
 .page-title a:visited {
 	color: #888;
@@ -593,7 +589,8 @@ div.menu li {
 	font-weight: 400;
 	line-height: 1.3em;
 	margin-bottom: 0;
-}
+}            
+
 .entry-title a:link,
 .entry-title a:visited {
 	color: #000;
