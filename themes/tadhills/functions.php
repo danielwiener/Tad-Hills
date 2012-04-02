@@ -116,7 +116,8 @@ function dw_add_js_scripts() {
 		wp_enqueue_script('jquery'); 
 		
 		   wp_register_script('jquery_tools',
-		       get_bloginfo('stylesheet_directory') . '/js/jquery.tools.min.js',
+		       // get_bloginfo('stylesheet_directory') . '/js/jquery.tools.min.js', 
+				'http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js',
 		       array('jquery'),
 		       '1.0' );
 		   // enqueue the script
