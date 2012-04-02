@@ -28,14 +28,14 @@
 						<?php the_content(); ?>
 						<hr />
 						<?php if ( get_post_meta($post->ID, "_praise", $single = true) ): ?> 
-							<h2>Praise</h2>
+							<h2 class="interim-title">Praise</h2>
 							     <?php meta('_praise'); ?>
 						<?php endif ?>
 						<?php if ( get_post_meta($post->ID, "_awards", $single = true) ): ?>
 							<?php if ( get_post_meta($post->ID, "_praise", $single = true) ): ?>
 								<hr /> 
 							<?php endif ?>
-							<h2>Awards</h2>
+							<h2 class="interim-title">Awards</h2>
 							     <?php meta('_awards'); ?>
 						<?php endif ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>

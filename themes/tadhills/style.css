@@ -581,6 +581,16 @@ div.menu li {
 .page-title a:active,
 .page-title a:hover {
 	color: #ff4b33;
+} 
+
+#content .interim-title { 
+	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #489101;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+	line-height: 36px;
+/*    border-bottom: 1px solid #489101;*/
 }
 #content .entry-title {
 	font-family: freight-sans-pro, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
