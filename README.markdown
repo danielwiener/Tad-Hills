@@ -83,5 +83,7 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
 - category and single and sidebar minor changes
 
- - headlines and other styling
+ - headlines and other styling 
+
+ - better link to Twitter
 
