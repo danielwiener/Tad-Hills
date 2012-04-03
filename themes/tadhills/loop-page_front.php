@@ -59,9 +59,10 @@ $(".slidetabs").tabs(".images > div", {
 	rotate: true
 
 // use the slideshow plugin. It accepts its own configuration
-}).slideshow( {
-	autoplay: true,
-	interval: 5000
-	} );
+
+
+
+}).slideshow( { interval: 5000} );
+setTimeout('$(".slidetabs").data("slideshow").play();', 2000);
 } );
 </script>
