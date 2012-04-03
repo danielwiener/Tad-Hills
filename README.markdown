@@ -85,5 +85,11 @@ Child site of TwentyTen/TwentyEleven for Tad Hills Children's books
 
  - headlines and other styling 
 
- - better link to Twitter
+ - better link to Twitter  
+
+***
+
+##April 2, 2012##
+
+- fixed slide show, skipping problem
 

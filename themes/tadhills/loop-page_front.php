@@ -35,15 +35,11 @@
 		<?php $slidetabs .= '<a href="#"></a>'; ?>
 			<?php endwhile; // End the loop. // wp_reset_query();?> </div><!-- images -->  
 
-<!-- <a class="backward">prev</a><a class="forward">next</a>   -->    
+    
 <div class="slidetabs">
 	<?php echo $slidetabs; ?>
 	</div>
 
-<!-- <div class="buttons">
-	<button onClick='$(".slidetabs").data("slideshow").play();'>Play</button>
-	<button onClick='$(".slidetabs").data("slideshow").stop();'>Stop</button>
-</div>    -->
 <script language="JavaScript">
 // What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
 // jQuery.noConflict();
@@ -60,7 +56,7 @@ $(".slidetabs").tabs(".images > div", {
 
 // use the slideshow plugin. It accepts its own configuration
 
-
+//http://jquerytools.org/forum/tools/25/80221 fix for skipping slide show - no autoplay
 
 }).slideshow( { interval: 5000} );
 setTimeout('$(".slidetabs").data("slideshow").play();', 2000);
