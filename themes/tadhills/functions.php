@@ -127,3 +127,42 @@ function dw_add_js_scripts() {
 } 
 //also need to figure out how do this with less repitition, more elegantly
 add_action('init', 'dw_add_js_scripts');
+
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'Front Teaser Text',
+'id' => 'front_teaser_text',
+'description' => __( 'Widgets in this area will be shown on the right-hand side.' ),
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '<h2>',
+'after_title' => '</h2>',
+));
+
+/**
+ * Adds theme/plugin custom images sizes added with add_image_size() to the image uploader/editor.  This 
+ * allows users to insert these images within their post content editor.
+ *
+ * @since Hybrid 1.3.0 - taken from Hybrid
+ * @access private
+ * @param array $sizes Selectable image sizes.
+ * @return array $sizes
+ */
+function dw_image_size_names_choose( $sizes ) {
+
+	/* Get all intermediate image sizes. */
+	$intermediate_sizes = get_intermediate_image_sizes();
+	$add_sizes = array();
+
+	/* Loop through each of the intermediate sizes, adding them to the $add_sizes array. */
+	foreach ( $intermediate_sizes as $size )
+		$add_sizes[$size] = $size;
+
+	/* Merge the original array, keeping it intact, with the new array of image sizes. */
+	$sizes = array_merge( $add_sizes, $sizes );
+
+	/* Return the new sizes plus the old sizes back. */
+	return $sizes;
+}
+/* Add all image sizes to the image editor to insert into post. */
+add_filter( 'image_size_names_choose', 'dw_image_size_names_choose' );
