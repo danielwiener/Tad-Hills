@@ -1471,7 +1471,7 @@ code {
 -------------------------------------------------------------- */
 
 	.slide_container {
-		height: 450px;
+		/*height: 450px;*/
 		overflow: hidden;
 		display: block;
 		float: left;
