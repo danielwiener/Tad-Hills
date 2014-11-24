@@ -42,16 +42,16 @@
 <!-- <h3 class="books">Purchase</h3> -->  
 <ul class="purchase">          
     				<?php if ( $indie_bound ): ?>
-				<li><a href="<?php echo $indie_bound; ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"><a/></li>
+				<li><a href="<?php echo $indie_bound; ?>" target="_blank" title="Buy from a local bookseller"><img src="/!/wp-content/themes/tadhills/assets/indie_bound.png" width="99" height="86"></a></li>
 			<?php endif ?>
 	        	<?php if ( $barnes_noble ): ?>
-			<li><a href="<?php echo $barnes_noble; ?>" target="_blank" title="Buy from Barnes and Noble"><img src="/!/wp-content/themes/tadhills/assets/barnes_and_noble.png" width="150" height="44"><a/></li>
+			<li><a href="<?php echo $barnes_noble; ?>" target="_blank" title="Buy from Barnes and Noble"><img src="/!/wp-content/themes/tadhills/assets/barnes_and_noble.png" width="150" height="44"></a></li>
 		<?php endif ?>
 			<?php if ( $amazon ): ?>
-				<li><a href="<?php echo $amazon; ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"><a/></li>
+				<li><a href="<?php echo $amazon; ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"></a></li>
 			<?php endif ?>
 			<?php if ( $rocket_ipad_app ): ?>
-				<li><a href="<?php echo $rocket_ipad_app; ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"><a/></li>
+				<li><a href="<?php echo $rocket_ipad_app; ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"></a></li>
 			<?php endif ?>
 			 </ul> 
 			
