@@ -36,6 +36,10 @@
 			$rocket_ipad_app = get_post_meta($post->ID, "_rocket_ipad_app", $single = true);
 			$purchase_flag = true;
 		}
+		if ( get_post_meta($post->ID, "_ibook", $single = true) ) {
+			$ibook = get_post_meta($post->ID, "_ibook", $single = true);
+			$purchase_flag = true;
+		}
 ?> 
 	<?php if ( $purchase_flag ): ?>
 	 	
@@ -49,6 +53,9 @@
 		<?php endif ?>
 			<?php if ( $amazon ): ?>
 				<li><a href="<?php echo $amazon; ?>" target="_blank" title="Buy from Amazon"><img src="/!/wp-content/themes/tadhills/assets/amazon.png" width="150" height="36"></a></li>
+			<?php endif ?>
+			<?php if ( $ibook ): ?>
+				<li><a href="<?php echo $ibook; ?>" target="itunes_store"><img src="/!/wp-content/themes/tadhills/assets/badge_ibooks-lrg.png"></a></li>
 			<?php endif ?>
 			<?php if ( $rocket_ipad_app ): ?>
 				<li><a href="<?php echo $rocket_ipad_app; ?>" target="_blank" title="Buy Rocket Ipad App"><img src="/!/wp-content/themes/tadhills/assets/rocket_ipad_app.png" width="100" height="100"></a></li>
